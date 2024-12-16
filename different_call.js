@@ -188,7 +188,7 @@ function run() {
     // Format the critical findings statement with the doctor name
     var formattedStatement = formatCriticalFindings(doctorName);   
     // Put the formatted statement in the clipboard
-    // fd.GetAutoIt.ClipPut(formattedStatement);
+    fd.GetAutoIt.ClipPut(formattedStatement);
 
     // Click toward bottom of the screen
     fd.GetAutoIt.MouseClick("left", 200, 1490);
