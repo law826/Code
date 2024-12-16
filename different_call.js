@@ -174,6 +174,10 @@ function formatCriticalFindings(doctorName) {
 }
 
 function run() {
+
+    // Mouse click to refresh the order notes. 
+    fd.GetAutoIt.MouseClick("left", 79, 220);
+
     // Extract the doctor name
     var doctorName = extractDoctorName();
 
