@@ -181,11 +181,7 @@ function run() {
     // Extract the doctor name
     var doctorName = extractDoctorName();
 
-    // Nothing seem to run below here. Debugging.
-    // fd.GetAutoIt.ClipPut("Doctor name: [" + doctorName + "]\n");
-    // That works fine. 
-
-    // Format the critical findings statement with the doctor name
+     // Format the critical findings statement with the doctor name
     var formattedStatement = formatCriticalFindings(doctorName);   
     // Put the formatted statement in the clipboard
     fd.GetAutoIt.ClipPut(formattedStatement);
