@@ -174,14 +174,13 @@ function formatCriticalFindings(doctorName) {
 }
 
 function run() {
-
-    // Mouse click to refresh the order notes. 
-    fd.GetAutoIt.MouseClick("left", 79, 220);
+    // Move mouse and pause briefly before clicking
+    fd.GetAutoIt.MouseClick("left", 79, 233, 2);
 
     // Extract the doctor name
     var doctorName = extractDoctorName();
 
-     // Format the critical findings statement with the doctor name
+    // Format the critical findings statement with the doctor name
     var formattedStatement = formatCriticalFindings(doctorName);   
     // Put the formatted statement in the clipboard
     fd.GetAutoIt.ClipPut(formattedStatement);
